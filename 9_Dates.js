@@ -2,7 +2,7 @@
 // Javascript object encapsulate an integral number that represents millisecondssince the midnight at 1st January 1970 UTC .
 
 let mydate = new Date();
-console.log(mydate.toString()); // thu nov 30 2023 16:18:11 gmt+0530 (india standard time)
+console.log(mydate.toString()); // thu nov 30 2023 16:18:11 gmt+0530 (Indian standard time)
 
 console.log(mydate.toDateString()); // thu nov 30 2023
 
