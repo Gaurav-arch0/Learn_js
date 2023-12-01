@@ -26,5 +26,3 @@ console.log(mynwDate.toLocaleString('en-In'));
 
 let indate = new Date(2023,11,1);
 console.log(indate.toDateString());// Fri Dec 01 2023
-
-
