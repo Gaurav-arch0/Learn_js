@@ -18,7 +18,13 @@ let myCreatedDate = new Date(2023,0,23);
 console.log(myCreatedDate.toDateString()); // Mon Jan 23 2023 ~ Here we understand that month is indexed with 0 .
 
 
-let mynewDate = new Date(2023,0,23,5,3);
-console.log(mynewDate.toLocaleString()); // Mon Jan 23 2023 ~ Custom Date and Time .
+let mynewDate = new Date(2023,0,23,5,3);// ~ (Year,Month,Date,Hours,Minutes)// 23/1/2023, 5:03:00 am ~ (Year,Month,Date,Hours,Minutes)
+console.log(mynewDate.toLocaleString()); // 23/1/2023, 5:03:00 am Custom Date and Time .
+
+let mynwDate = new Date(2023,0,23,5,3);//23/1/2023, 5:03:00 am
+console.log(mynwDate.toLocaleString('en-In'));
+
+let indate = new Date(2023,11,1);
+console.log(indate.toDateString());// Fri Dec 01 2023
 
 
