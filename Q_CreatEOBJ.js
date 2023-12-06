@@ -1,3 +1,6 @@
+// To Convert two arrays into a object.
+
+
 let arr1 = [1,2,3,4];
 let arr2 = ["Amit" , "Somya" , "sia" , "diljit"];
 function ConvertToObj(a , b){
