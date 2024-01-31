@@ -25,3 +25,16 @@
 // const isBelowThreshhold = (currentvalue) => currentvalue < 40;
 // const array1 = [5,10,15,20,25];
 // console.log(array1.every(isBelowThreshhold)) ;   //true
+
+//Array_Prototypes .push() -  method allows you to add one or more elements to the end of an array.
+//The push() method does not change the length property of an Array object. It returns the new length of the object.
+       
+// const array1 = [1,2,3,4,5];
+// array1.push(6);
+// console.log(array1);//[ 1, 2, 3, 4, 5, 6 ]
+
+//Array_Prototypes .pop() - method removes the last element of the array , no need to give  any argument.
+        
+const array1 = [1,2,3,4,5];
+array1.pop();     
+console.log(array1);       
