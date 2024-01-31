@@ -20,7 +20,6 @@ console.log(mydate.toLocaleString());// 30/11/2023, 4:21:32 pm
 let myCreatedDate = new Date(2023,0,23);
 console.log(myCreatedDate.toDateString()); // Mon Jan 23 2023 ~ Here we understand that month is indexed with 0 only when writing in array  , If we want to print date structure as("YYYY-MM-DD"/"MM-DD-YYYY") month should be 01.
 
-
 let mynewDate = new Date(2023,0,23,5,3);// ~ (Year,Month,Date,Hours,Minutes)// 23/1/2023, 5:03:00 am ~ (Year,Month,Date,Hours,Minutes)
 console.log(mynewDate.toLocaleString()); // 23/1/2023, 5:03:00 am Custom Date and Time .
 
@@ -32,3 +31,10 @@ console.log(indate.toDateString());// Fri Dec 01 2023
 
 let bigtwo = new Date();
 console.log(bigtwo.getDate());//4 
+
+let myCreatedDate1 = new Date("01-14-2023");
+let myTimeStamp = Date.now();   
+console.log(myTimeStamp);// 1637999777019
+console.log(myCreatedDate1.getTime());
+
+console.log(Math.floor(Date.now()/1000)); // Convert in Seconds.
