@@ -64,3 +64,26 @@
 // Array Prototypes .typeOf() - Gives the data typeof  that array.
 
 //  Array Prototypes .sort() method sorts the elements in ascending order by default.
+
+// Array Prototypes .slice() -  Extracts a section of an array and return a new array.    
+ const fruits = ['apple', 'banana', 'cherry', 'date'];    
+ const citrus = fruits.slice(0, 2);    // [ 'apple', 'banana' ]
+ console.log(citrus);
+
+// Array Prototypes .splice() - Inserts/Removes elements    
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.splice(2, 0, "A", "B");  // insert A B at position 2
+// console.log(numbers);            // [ 1, 2, "A", "B", 3, 4, 5 ]
+
+// numbers.splice(1,4);           // remove one item at position  2
+//                                 // (the parameter is for how many items to be removed)
+// console.log(numbers);             // [ 1, 2, "A", "B", 4, 5 ]
+
+// let i;
+// for (i = 0; i < numbers.length; i++) {
+// 	if (numbers[i] === "A") {
+// 		break;
+// 	}
+// }
+// console.log(`The number "A" was found at position ${i}`);
+
