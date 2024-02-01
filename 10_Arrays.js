@@ -4,5 +4,8 @@
 // Shallow Copy -  copy of an object whose properties share the same reference point.
 // Deep Copy - copy of an object whose properties do not share the same reference point.
 
-const array1 = [1,2,3,4];
-console.log(array1[0]);
+// const array1 = [1,2,3,4];
+// console.log(array1[0]);
+
+// const array2 = new  Array(1,3,4,5);
+// console.log(array2);
