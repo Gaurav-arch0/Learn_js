@@ -31,10 +31,36 @@
        
 // const array1 = [1,2,3,4,5];
 // array1.push(6);
-// console.log(array1);//[ 1, 2, 3, 4, 5, 6 ]
+// console.log(array1);       //[ 1, 2, 3, 4, 5, 6 ]
 
 //Array_Prototypes .pop() - method removes the last element of the array , no need to give  any argument.
         
-const array1 = [1,2,3,4,5];
-array1.pop();     
-console.log(array1);       
+// const array1 = [1,2,3,4,5];
+// array1.pop();     
+// console.log(array1);        //[ 1, 2, 3, 4 ]  
+
+// Array_Prototypes .unshift() - method adds elements at the beginning of an array and returns new length.
+// const array1 = [1,2,3,4,5];
+// array1.unshift(8);
+// console.log(array1);       //[8, 1, 2, 3, 4, 5]
+
+
+// Array_Prototypes .shift() - method removes elements at the beginning of an array and returns new length.
+// const array1 = [8,1,2,3,4];
+// array1.shift();
+// console.log(array1);        //[ 1, 2, 3, 4 ]
+
+
+//  Array Prototypes .indexOf() - returns the index of particular element.
+
+//  Array  Prototypes .lastIndexOf() - returns the index of the last occurrence of a specified value
+
+//  Array Prototypes .includes() - checks if array includes a certain value among its entries, returns true or false.
+
+//  Array Prototypes .join() -  joins all elements of an array into a string.
+// const arr=['I','love','to','code']
+// console.log(arr.join('-'));     // I-love-to-code
+
+// Array Prototypes .typeOf() - Gives the data typeof  that array.
+
+//  Array Prototypes .sort() method sorts the elements in ascending order by default.
