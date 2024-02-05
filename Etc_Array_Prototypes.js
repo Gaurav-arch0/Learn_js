@@ -87,3 +87,10 @@
 // }
 // console.log(`The number "A" was found at position ${i}`);
 
+
+// Array Prototypes .flat() - flattens nested arrays into a flat array.
+// const nestArr=[1,[2,3],[[4,5]]];
+// console.log(nestArr.flat());       // [1, 2, 3, 4, 5]               
+
+//Array.isArray() - determines whether the passed value is an array. Returns true if it is and false otherwise.
+
