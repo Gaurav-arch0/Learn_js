@@ -43,3 +43,5 @@ JSUser.greetingTwo = function(){
 } 
 console.log(JSUser.greeting());
 console.log(JSUser.greetingTwo());
+
+//Here we discussed about Object Literals in the next module we will work on Object Constructor or Singleton.
