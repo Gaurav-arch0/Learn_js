@@ -39,7 +39,7 @@ JSUser.greeting = function(){
     console.log("Hello Js User");
 } 
 JSUser.greetingTwo = function(){   
-    console.log(`Hi ${this.name}`); // We can also use template literals for string interpolation.
+    console.log(`Hi ${this.name}`);// We can also use template literals for string interpolation.
 } 
 console.log(JSUser.greeting());
 console.log(JSUser.greetingTwo());
