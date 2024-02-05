@@ -24,3 +24,22 @@ console.log(JSUser["email"]);
 console.log(JSUser["full name"]);
 
 console.log(JSUser[mysym]); // For Symbol data type which is a primitive data type we have to use square notations else we will not be able to get output as symbol datatype.
+
+// To change the value of a  object in JavaScript you can use dot notation or square notation.
+JSUser.email =  "ahujagaurav97@gmail.com";
+console.log(JSUser.email);
+
+// To freeze the object we apply freeze on object and pass the object name as parameter.
+// Object.freeze(JSUser);
+// JSUser.email = "ahuja@gmail.com"; //Here we  notice that the value is unchanged as the  Object is frozen.
+// console.log(JSUser);
+
+// Functions inside an object ,functions are considered as first citizen type in js and we can treat them like variables.
+JSUser.greeting = function(){
+    console.log("Hello Js User");
+} 
+JSUser.greetingTwo = function(){   
+    console.log(`Hi ${this.name}`); // We can also use template literals for string interpolation.
+} 
+console.log(JSUser.greeting());
+console.log(JSUser.greetingTwo());
