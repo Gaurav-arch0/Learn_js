@@ -66,9 +66,9 @@
 //  Array Prototypes .sort() method sorts the elements in ascending order by default.
 
 // Array Prototypes .slice() -  Extracts a section of an array and return a new array.    
- const fruits = ['apple', 'banana', 'cherry', 'date'];    
- const citrus = fruits.slice(0, 2);    // [ 'apple', 'banana' ]
- console.log(citrus);
+//  const fruits = ['apple', 'banana', 'cherry', 'date'];    
+//  const citrus = fruits.slice(0, 2);    // [ 'apple', 'banana' ]
+//  console.log(citrus);
 
 // Array Prototypes .splice() - Inserts/Removes elements    
 // const numbers = [1, 2, 3, 4, 5];
@@ -92,5 +92,12 @@
 // const nestArr=[1,[2,3],[[4,5]]];
 // console.log(nestArr.flat());       // [1, 2, 3, 4, 5]               
 
-//Array.isArray() - determines whether the passed value is an array. Returns true if it is and false otherwise.
+// Array.isArray() - determines whether the passed value is an array. Returns true if it is and false otherwise.
 
+// Array Prototypes .from() -  creates a new, shallow-copied array instance from an iterable object.
+// const str="Hello World";
+// console.log(Array.from(str));        // ["H","e","l","l","o"," ","W","o","r","l","d"]
+
+// Array Prototypes .Of() -  Creates a new, shallow-copied array instance from a variable number of arguments, plus     
+// const obj={a:1,b:2};
+// console.log(Object.entries(obj));      // [["a", 1],
