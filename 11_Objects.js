@@ -46,4 +46,22 @@ console.log(JSUser.greetingTwo());
 
 //Here we discussed about Object Literals in the next module we will work on Object Constructor or Singleton.
 
+const regularUser = {
+    email: "gaurav07@gmail.com",
+    fullname: {
+        userfullname:{
+            firstname: "Gaurav",
+            lastname:"Ahuja",
+        }
+    }
+}
+console.log(regularUser.fullname.userfullname.firstname);   //  Gaurav    //We can access it by using nested property.
 
+//We can create getter setter method to make our own properties private.
+Object.defineProperty(regularUser,"password",{
+    enumerable : false,   //This means this property will not be shown when we do for...in loop.
+    writable : true,     // This means we can modify the value of password.
+    value :"123456"       // The initial value of password.
+});
+
+console.log(regularUser.password);                      // Here we can directly access the
