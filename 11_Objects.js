@@ -64,4 +64,12 @@ Object.defineProperty(regularUser,"password",{
     value :"123456"       // The initial value of password.
 });
 
-console.log(regularUser.password);                      // Here we can directly access the
+console.log(regularUser.password);      // Here we can directly access the password using dot notation.
+
+const obj1 = {1:"a" , 2:"b" , 3:"c"}
+const obj2 = {4:"d" , 5:"e" , 6:"f"}
+// const obj3 = {obj1 , obj2};
+// const obj3 = Object.assign({} , obj1 , obj2);
+// Object.assign() - It copies all the enumerable own properties from one or more source objects to a target object. // Using assign method we can merge two objects into one. //Merging two objects into one.
+const obj3 = { ...obj1 , ...obj2 }; //Spread operator used here.    
+console.log(obj3);
