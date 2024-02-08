@@ -35,14 +35,14 @@ console.log(JSUser.email);
 // console.log(JSUser);
 
 // Functions inside an object ,functions are considered as first citizen type in js and we can treat them like variables.
-JSUser.greeting = function(){
-    console.log("Hello Js User");
-} 
-JSUser.greetingTwo = function(){   
-    console.log(`Hi ${this.name}`);// We can also use template literals for string interpolation.
-} 
-console.log(JSUser.greeting());
-console.log(JSUser.greetingTwo());
+// JSUser.greeting = function(){
+//     console.log("Hello Js User");
+// } 
+// JSUser.greetingTwo = function(){   
+//     console.log(`Hi ${this.name}`);// We can also use template literals for string interpolation.
+// } 
+// console.log(JSUser.greeting());
+// console.log(JSUser.greetingTwo());
 
 //Here we discussed about Object Literals in the next module we will work on Object Constructor or Singleton.
 
@@ -73,3 +73,30 @@ const obj2 = {4:"d" , 5:"e" , 6:"f"}
 // Object.assign() - It copies all the enumerable own properties from one or more source objects to a target object. // Using assign method we can merge two objects into one. //Merging two objects into one.
 const obj3 = { ...obj1 , ...obj2 }; //Spread operator used here.    
 console.log(obj3);
+
+const users = [
+    {
+        id:1,
+        email:"gaurav@gmail.com",
+        name:"Gaurav Ahuja",
+    },
+    {
+        id:2,
+        email:"gaurav@gmail.com",
+        name:"Gaurav Ahuja",
+    },
+    {
+        id:3,
+        email:"gaurav@gmail.com",
+        name:"Gaurav Ahuja",
+    }
+]
+users[1].email
+console.log(JSUser);
+console.log(Object.keys(JSUser));  // It returns an array of all the enumerable properties present in that object.// It will show all the properties of regular user object.
+
+console.log(Object.values(JSUser));  //Returns an array of values in object.
+
+console.log(Object.entries(JSUser)) ; // Returns an array of arrays . Each sub-array contains a key and its corresponding value.
+
+console.log(JSUser.hasOwnProperty("email")); // Returns boolean indicating whether the object has the specified property .
