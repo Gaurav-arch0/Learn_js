@@ -24,4 +24,4 @@ chai();
     console.log(`DB CONNECTED TWO ${NAME}`); 
 })('Gaurav')
 
-/*.......To write two IIFE togethere we add a semi-colon to end the first IIFE function..........*/
+/*.......To write two IIFE togethere we add a semi-colon to end the first IIFE function ..........*/
