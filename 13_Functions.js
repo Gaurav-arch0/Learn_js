@@ -45,7 +45,32 @@ console.log(loginUserMessage());
 
 //Rest Operator - It allows us to store the remaining number of elements in an array or object into a new variable. Its denotation is same as the spread operator i.e (...num1) three dots.
 
-function calculateCartPrice(...num1){
+//function calculateCartPrice(...num1){
+function calculateCartPrice(val1 , val2 ,...num1){ // In this line val1,val2 are discarded and rest numbers are excecuted.
     return num1;
 }
-console.log(calculateCartPrice(200 , 500 , 600));
+console.log(calculateCartPrice(200 , 500 , 600 , 1000));
+
+const User = {
+    userName : "Gaurav" ,
+    password : "password@123",
+    email : "gauravsingh4dsc@gmail.com",
+    country : "India",
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.userName} and password is ${anyObject.password}`);
+} 
+
+// handleObject(User);
+handleObject({
+    userName : "Harsh",
+    password : "NewPassword123",
+});
+
+const myNewArray = [200,400,600,1000]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,400,600,1000]));
