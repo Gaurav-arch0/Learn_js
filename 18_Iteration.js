@@ -1,4 +1,4 @@
-// FOR Loop - Repeat a block of code for as long as the condition is true.
+// 1.  FOR Loop - Repeat a block of code for as long as the condition is true.
 // The loop will execute at least once, even if the condition is false.
 
 for(let i = 0 ; i<= 10 ; i++)
@@ -54,3 +54,16 @@ for(let a = 1; a <=20; a++)
      console.log(`value of  a: ${a}`);
 }
 
+// 2. While Loop - Repeats a block of code as long as the condition remains true.
+
+// Syntax 
+// while (condition) {
+//    // code block to be executed     
+// }
+
+let b = 0 ;
+while(b <= 10)
+{
+    console.log(`Value of b is ${b}`);
+    b++;
+}
