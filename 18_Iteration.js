@@ -29,3 +29,28 @@ for(let k = 0 ; k < myarr.length ; k++){
     const ele = myarr[k];
     console.log(ele);
 }
+
+// Break Statement - Used to stop execution of a loop prematurely.
+// It transfers the control out of the loop.
+
+// for(let a = 1; a <=20; a++)
+// {
+//     if(a == 5 ){
+//         console.log(`Detected 5`);
+//         break;
+//     }
+//     console.log(`Value of  A: ${a}`);
+// }
+
+
+// Continue Statement - Used to skip the current iteration of a loop and continue with the next iteration.It does not affect the execution order of other iterations.
+
+for(let a = 1; a <=20; a++)
+ {
+     if(a == 5 ){
+         console.log(`Detected 5`);
+         continue;
+     }
+     console.log(`value of  a: ${a}`);
+}
+
