@@ -110,3 +110,32 @@ const myCoding = [
 myCoding.forEach( (item) => {
     console.log(item.languageextension);
 }) // This is how we loop through values inside an array containing object .
+
+
+// Filter -  It will return new array with the elements that satisfy the condition provided in filter() method.Whereas, foreach doesn't returns values.
+
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+const newNums = myNums.filter( (num) => num > 4)
+console.log(newNums); //[ 5,  6, 7, 8,  9, 10] // In this we can access values as we are using parameters to define the condition but if we use a scope we need to give return as it does not return value on its own.
+
+// const myNums1 = [1,2,3,4,5,6,7,8,9,10]
+// const newNums1 = myNums.filter( (num) => {
+//     num > 4
+// })
+// console.log(newNums1); //[ ] // Hence we get an empty array as we have not given return statement. 
+
+const myNums1 = [1,2,3,4,5,6,7,8,9,10]
+const newNums1 = myNums.filter( (num) => {
+    return num > 4
+})
+console.log(newNums1); //we use a scope we need to give return as it does not return value on its own.
+
+const myNums2 = [1,2,3,4,5,6,7,8,9,10]
+const newNums2 = []
+myNums2.forEach( (num) => {
+    if(num > 4)
+    {
+        newNums2.push(num)
+    }
+})
+console.log(newNums2);
