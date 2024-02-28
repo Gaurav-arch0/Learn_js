@@ -65,5 +65,23 @@ let b = 0 ;
 while(b <= 10)
 {
     console.log(`Value of b is ${b}`);
-    b++;
+    b+=2;
 }
+
+let myarr1 = ["flash" , "batman" , "superman"]
+let arr = 0;
+while(arr < myarr1.length)
+{
+    console.log(`Value is ${myarr1[arr]}`);
+    arr++;
+}
+
+
+// 3. DO-WHILE Loop - It executes the block of code at least once and then continues executing it as long as the condition remains. It is a exit control loop.
+
+ let score = 1;
+ do{
+    console.log(`Score is ${score}`);
+    score++;
+ }
+ while(score <= 10) 
