@@ -109,4 +109,4 @@ const myCoding = [
 
 myCoding.forEach( (item) => {
     console.log(item.languageextension);
-}) // This is how we access values inside an array containing object .
+}) // This is how we loop through values inside an array containing object .
