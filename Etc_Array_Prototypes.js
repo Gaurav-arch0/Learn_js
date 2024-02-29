@@ -101,3 +101,38 @@
 // Array Prototypes .Of() -  Creates a new, shallow-copied array instance from a variable number of arguments, plus     
 // const obj={a:1,b:2};
 // console.log(Object.entries(obj));      // [["a", 1],
+
+// Array Prototypes .Reduce() - Apply a function against an accumulator and each element in the array (from left to right) . 
+
+const myNums = [1,2,3]
+// const myTotal = myNums.reduce(function(acc,currentvalue){
+//     console.log(` acc : ${acc} and currentvalue : ${currentvalue}`);
+//     return acc + currentvalue;
+// }, 0)
+
+const myTotal = myNums.reduce( (acc,currentValue) => acc+currentValue, 0) 
+console.log(myTotal);
+
+
+const shoppingcart = [
+    {
+        itemName : ".js course" ,
+        itemPrice : 199,
+    },
+    {
+        itemName : ".py course" ,
+        itemPrice : 299 ,  
+    },
+    {
+        itemName : "DSA course" ,
+        itemPrice : 399  , 
+    },
+    {
+        itemName : "Android Development course" ,
+        itemPrice : 499   
+    },
+]
+
+const TotalPrice = shoppingcart.reduce((acc,item) => acc + item.itemPrice , 0)
+
+console.log(TotalPrice);
