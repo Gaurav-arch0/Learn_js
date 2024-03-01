@@ -32,3 +32,20 @@
 // 'DOM Learning on Learn.js'
 // title.innerHTML
 // ' DOM Learning on Learn.js <span style="display: none;">test text</span>'
+
+// document.querySelector('ul')
+// <ul>​…​</ul>​
+// const myul = document.querySelector('ul')
+// undefined
+// myul.querySelector('li')
+// <li>​…​</li>​
+// const turngreen = myul.querySelector('li')
+// undefined
+// turngreen.style.backgroundColor = "16px"
+// '16px'
+// turngreen.style.backgroundColor = "green"
+// 'green'
+// turngreen.style.padding = "16px"
+// '16px'
+// turngreen.innerText = "five"
+// 'five'
