@@ -49,3 +49,11 @@
 // '16px'
 // turngreen.innerText = "five"
 // 'five'
+
+
+// document.querySelectorAll('li')
+// NodeList(3) [li, li, li]
+// const templiList = document.querySelectorAll('li')
+// undefined
+// templiList
+// NodeList(3) [li, li, li]
