@@ -25,6 +25,7 @@
 // title.style.borderRadius = '5px'
 // '5px'
 
+// CONTENT
 
 // title.textContent
 // ' DOM Learning on Learn.js test text'
@@ -32,6 +33,9 @@
 // 'DOM Learning on Learn.js'
 // title.innerHTML
 // ' DOM Learning on Learn.js <span style="display: none;">test text</span>'
+
+
+// QUERY - SELECTOR/QUERY - SELECTOR ALL
 
 // document.querySelector('ul')
 // <ul>​…​</ul>​
@@ -50,6 +54,7 @@
 // turngreen.innerText = "five"
 // 'five'
 
+// ID
 
 // document.querySelectorAll('li')
 // NodeList(3) [li, li, li]
@@ -57,3 +62,30 @@
 // undefined
 // templiList
 // NodeList(3) [li, li, li]
+
+// templiList.ctyle.color = 'green' // Will give uncaught reference  error as ctyle is not a method of node list object but it is available in array like
+// const templiList = document.querySelectorAll('li')
+// templiList
+// templiList.style.color = 'green'//Error Underfined
+// templiList[0].style.color = 'greeen' 
+
+// const myH1 = document.querySelectorAll('h1')
+// myH1.style.color = 'green'
+
+// templiList.forEach(function(l){})
+// undefined
+// templiList.forEach(function (l) {
+//     l.style.backgroundcolor = 'green'
+// })
+
+
+// CLASS-NAME
+// document.getElementsByClassName('list-item')
+// const tempclassList = document.getElementsByClassName('list-item')
+// tempclassList
+// Array.from(tempclassList)
+// const myConvertedArray = Array.from(tempclassList)
+// myConvertedArray
+// myConvertedArray.forEach(function(li){
+//     li.style.color = 'orange'
+// })
