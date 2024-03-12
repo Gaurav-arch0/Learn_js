@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Events </title>
+</head>
+<body>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('owl clicked'); // Here we should use event listener instead of these two approaches as event listeners help in propogation . As this approach gives us less features.
+    // }
+
+        document.getElementById('owl').addEventListener('click',function(){
+            alert('owl clicked again')
+            console.log(event);
+        }) // Best Approach
+
+        // attachEvent - which was used for internet explorer.
+        // jQuery -  Was a  library that wrapped the browser's API and provided similarly as React.
+
+
+    // type , timestamp , defaultPrevented , 
+    // target , toElement . src Element , Current Target , 
+    // clientX , ClientY - Mouse Position in Screen Coordinates ,
+    // pageX , PageY - Mouse Position in Document Coordinates  ,
+    // screenX , ScreenY - Mouse Position in Screen Coordinates  ,
+    // altKey , ctrlKey , shiftKey , metaKey
+
+    
+     // Event Propogation relates to event bubbling  and capturing in JavaScript. 
+    // In Use Currently - Default Type is event bubbling it occours when we pass the click event on child element then it automatically triggers. If false is passed as the third parameter the event bubbling phase starts . 
+
+    // Event Bubbling Example - Bottom to Top
+    // document.getElementById('images').addEventListener('click',function(){
+    //     console.log("Clicked on Images");
+    // },false)  // Clicked on Images
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     console.log("Owl Clicked");
+    // },false) // Owl Clicked
+             // Clicked on Images
+
+    // Event Capturing Example - Top to Bottom
+    document.getElementById('owl').addEventListener('click',function(){
+        console.log(" Clicked on Images");
+    },true)
+
+    document.getElementById('owl').addEventListener('click',function(){
+        console.log("Owl Clicked");
+    },true)
+
+
+</script>
+</html>
