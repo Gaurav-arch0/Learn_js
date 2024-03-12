@@ -52,14 +52,28 @@
     // },false) // Owl Clicked
              // Clicked on Images
 
-    // Event Capturing Example - Top to Bottom
-    document.getElementById('owl').addEventListener('click',function(){
-        console.log(" Clicked on Images");
-    },true)
+    document.getElementById('images').addEventListener('click',function(e){
+    console.log("Clicked on Images");
+    },false)
+    document.getElementById('owl').addEventListener('click',function(e){
+    console.log("Owl Clicked");
+    e.stopPropagation()   
+    },false)
 
-    document.getElementById('owl').addEventListener('click',function(){
-        console.log("Owl Clicked");
-    },true)
+    // Event Capturing Example - Top to Bottom
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     console.log(" Clicked on Images");
+    // },true)
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     console.log("Owl Clicked");
+    // },true)
+
+    // Prevent Default
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log("Google Clicked");
+        e.preventDefault()
+    })
 
 
 </script>
